@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array= [1,2,3,4,5]
+        array.forEach(item =>{
+            document.writeln(item);
+        });
+
+        let angka1= [1,2,3,4,5,6,7,8,9]
+        let fillarr= angka.filter(item => item % 2 === 0);
+        document.writeln(fillarr);
+
+        let angka2= [1,2,3,4,5,6,7,8,9]
+        let maparr= angka.map(item => item % 2 === 0)
+        document.writeln(maparr)
+
+       let angka3= [20,10,3,30,58,42,6,9]
+       let huruf= ['z','a','c','g','p']
+       let hang= angka.sort((a,b)=> a>b ? 1 : -1);
+       document.writeln(hang)
+       let hhur= huruf.sort((a,b) => a>b ? -1 : 1);
+       document.writeln(hhur)
+
+    let hewan= ['monyet','anjing','sapi'];
+    let hasil= buah.join('-');
+    document.writeln(hasil)
+
+    let name1= ['laname','jalax','okdn']
+    let siswaygdiblokir= siswa.pop();
+    document.writeln(siswa);
+    document.writeln(siswaygdiblokir);
+
+    let name2= ['laname','jalax','okdn']
+    let panjang= siswa.push('zlenx','exnos');
+    document.writeln(siswa);
+    document.writeln(panjang);
+
+    let name4= {name:'elzzy',age: 20, city:'New York'};
+    for(let prop in siswa){
+        document.writeln(prop+ ':'+siswa[prop])
+    }
+
+    let angka= [1,2,3,4,5]
+    for(let num of angka){
+        document.writeln(num)
+    }
+    </script>
+</body>
+
+</html>

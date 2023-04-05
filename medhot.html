@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methot array</title>
+</head>
+<body>
+    <script>
+        // Contoh Filter menampilkan angka genap
+                const values = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        const value = values.filter((elemen) => elemen % 2 === 0);
+                console.log(value);
+
+                // Contoh forEach menampilkan urutan angka array
+                const numbers = [1, 5, 6, 8, 9, 3];
+        numbers.forEach((elemen, indeks, array) => {
+                    console.log('elemen:', elemen, 'indeks:', indeks, 'array:', array);
+        });
+
+                // Contoh Join dengan menggunakan pemisah "*"
+                const buah = ["apel", "pisang", "mangga"];
+                const hasil = [buah.join("*")];
+                console.log(hasil);
+
+                // Contoh Map mengalikan angka dan angka dikali 2 
+                const nuumbers = [5, 8, 7, 3, 4, 9];
+        const numbersMultiplyTwo = nuumbers.map((nuumber) => nuumber * 2);
+
+                console.log(numbersMultiplyTwo);
+                console.log(nuumbers);
+
+                // Contoh pop mengembalikan elemen yang dihapus, nilai kembaliannya kita tampung ke variabel mahasiswaDihapus
+                const mahasiswa = ['budi', 'bambang', 'ucup'];
+                const mahasiswaDihapus = mahasiswa.pop();
+                console.log(mahasiswa);
+                console.log(mahasiswaDihapus);
+
+                // Contoh Push membuat array mahasiswa yang berisi dua elemen, lalu kita menambahkan dua elemen baru
+                const mahaasiswa = ['budi', 'ucup'];
+                const panjang = mahaasiswa.push('otong', 'bambang');
+
+                console.log(mahaasiswa);
+                console.log(panjang);
+
+                // Contoh sort Sort mengurutkan angka
+                const angka = [3, 1, 5, 0, 10, 13, 20, 27];
+                angka.sort();
+                console.log(angka);
+
+                // for in
+                const mahasiiswa = {
+                    nama: 'ucup',
+                umur: 20,
+                jurusan: 'teknik informatika',
+        }
+
+                for (const key in mahasiiswa) {
+                    console.log(`${key} = ${mahasiiswa[key]}`);
+            }
+
+                // for up
+                const buaah = ['pisang', 'mangga', 'apel'];
+
+                for (const elemen of buaah) {
+                    console.log(elemen);
+            }
+    </script>
+</body>
+</html>
